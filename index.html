@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatiable" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+</head>
 <body>
 <!--Head-->
 <div class="head-div">
@@ -18,14 +18,11 @@
 <div class="link-div">
     <a href="https://ixxi-devlog.tistory.com/" class="alink">TIL등 공부 기록을 정리하는 블로그</a>
     <a href="https://github.com/penguin1109" class="alink">GitHub 저장소</a>
-    <div class="blink-parent" max-width:590px;>
-        <a href="https://www.instagram.com/mnixxinexx/?hl=ko" class="blink-child">Instargram 주소</a>
-        <a href="mailto:1109penguin@gmail.com" class="blink-child">Contact Me via Gmail</a>
-    </div>
+    <a href="https://www.instagram.com/mnixxinexx/?hl=ko" class="blink">Instargram 주소</a>
+    <a href="mailto:1109penguin@gmail.com" class="blink">Contact Me via Gmail</a>
 </div>
 
 </body>
-</head>
 </html>
 
 <style>
@@ -78,23 +75,18 @@
     border:2px solid;
     border-color:cadetblue;
 }
-.blink-parent:hover{
+.blink:hover{
     color:cadetblue;
     background-color:hotpink;
     border:2px solid;
     border-color:cadetblue;
 }
-.blink-parent{
-    display:flex;
-}
-.blink-child{
-    flex:1;
-    padding-right:1%;
-}
-.blink-parent{
+
+.blink{
     text-align:center;
     margin-top:1px;
     padding:20px 0;
+    width:50%;
     max-width:590px;
     display:block;
     float:left;
