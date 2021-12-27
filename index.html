@@ -19,7 +19,7 @@
 <div class="link-div">
     <a href="https://ixxi-devlog.tistory.com/" class="alink">TIL등 공부 기록을 정리하는 블로그</a>
     <a href="https://github.com/penguin1109" class="alink">GitHub 저장소</a>
-    <div class="blink-parent" width:590px;>
+    <div class="blink-parent" max-width:590px;>
         <a href="https://www.instagram.com/mnixxinexx/?hl=ko" class="blink-child">Instargram 주소</a>
         <a href="mailto:1109penguin@gmail.com" class="blink-child">Contact Me via Gmail</a>
     </div>
@@ -37,6 +37,7 @@
 }
 /*for the box containing the profile image and explanation*/
 .box{
+    text-align:center;
     width:150px;
     height:150px;
     border-radius:70%;
@@ -44,6 +45,7 @@
 }
 /*for the rounded profile image*/
 .profile-img{
+    text-align:center;
     width:100%;
     height:100%;
     object-fit:cover;
@@ -76,12 +78,18 @@
     border:2px solid;
     border-color:cadetblue;
 }
-
+.blink-parent:hover{
+    color:cadetblue;
+    background-color:hotpink;
+    border:2px solid;
+    border-color:cadetblue;
+}
 .blink-parent{
     display:flex;
 }
 .blink-child{
     flex:1;
+    padding-right:1%;
 }
 .blink-parent{
     text-align:center;
