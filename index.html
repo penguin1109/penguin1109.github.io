@@ -9,7 +9,9 @@
 <body>
 <!--Head-->
 <div class="head-div">
-    <img src="profile.jpg" alt="profile" class="profile-img" title="Welcome to Jihe's Portfolio">
+    <div class="box">
+        <img src="profile.jpg" alt="profile" class="profile-img" title="Welcome to Jihe's Portfolio">
+    </div>
     <h3>Jihe Lee</h3>
     <h5>Learnning Computer Vision to be an Artificial Intelligence Software Programmer</h5>
 </div>
@@ -17,8 +19,10 @@
 <div class="link-div">
     <a href="https://ixxi-devlog.tistory.com/" class="alink">TIL등 공부 기록을 정리하는 블로그</a>
     <a href="https://github.com/penguin1109" class="alink">GitHub 저장소</a>
-    <a href="https://www.instagram.com/mnixxinexx/?hl=ko" class="blink">Instargram 주소</a>
-    <a href="mailto:1109penguin@gmail.com" class="blink">Contact Me via Gmail</a>
+    <div class="blink-parent" width:590px;>
+        <a href="https://www.instagram.com/mnixxinexx/?hl=ko" class="blink-child">Instargram 주소</a>
+        <a href="mailto:1109penguin@gmail.com" class="blink-child">Contact Me via Gmail</a>
+    </div>
 </div>
 
 </body>
@@ -30,6 +34,19 @@
     padding:20%;
     padding-top:2%;
     padding-bottom:3%;
+}
+/*for the box containing the profile image and explanation*/
+.box{
+    width:150px;
+    height:150px;
+    border-radius:70%;
+    overflow:hidden;
+}
+/*for the rounded profile image*/
+.profile-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .link-div{
@@ -53,7 +70,20 @@
 
 }
 
-.blink{
+.alink:hover{
+    color:cadetblue;
+    background-color:hotpink;
+    border:2px solid;
+    border-color:cadetblue;
+}
+
+.blink-parent{
+    display:flex;
+}
+.blink-child{
+    flex:1;
+}
+.blink-parent{
     text-align:center;
     margin-top:1px;
     padding:20px 0;
